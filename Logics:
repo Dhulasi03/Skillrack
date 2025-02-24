@@ -20,3 +20,6 @@ int[] → String	Arrays.toString(intArray)
 String[] → String	String.join(" ", array) or StringJoiner
 ArrayList<String> → String	String.join(" ", list)
 
+//// repeat the string
+str.repeat(N)
+
