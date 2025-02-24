@@ -1,2 +1,4 @@
 // a=1;A=1
 System.out.print((ch >= 'A' && ch <= 'Z') ? (ch - 'A' + 1) : (ch - 'a' + 1));
+last three string  ends with
+  if (word.endsWith("ion"))
