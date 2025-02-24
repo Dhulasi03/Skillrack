@@ -10,3 +10,13 @@ str1.concat(str2)
 
 ///contains
 str1.contains(str2)
+
+///char array  to  string
+String.valueOf(charArray)
+ Summary
+Data Type	Method
+char[] → String	new String(charArray) or String.valueOf(charArray)
+int[] → String	Arrays.toString(intArray)
+String[] → String	String.join(" ", array) or StringJoiner
+ArrayList<String> → String	String.join(" ", list)
+
