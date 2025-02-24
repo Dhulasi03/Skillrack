@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine(); // Read the entire line as a string
+        String[] arr = a.split(" ");
+        String r = "10:00";
+        int rtime = converts(r); // Convert "10:00" to minutes
+        int s = 0;
+
+        for (String i : arr) {
+            int c = converts(i); // Convert each time to minutes
+            if (c > rtime) { // Compare numerically
+                s++;
+            }
+        }
+
+        System.out.print(s);
+    }
+
+    private static int converts(String t) {
+        String[] p = t.split(":");
+        int h = Integer.parseInt(p[0]);
+        int m = Integer.parseInt(p[1]);
+        return h * 60 + m;
+    }
+}
