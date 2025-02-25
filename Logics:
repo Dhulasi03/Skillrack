@@ -27,3 +27,13 @@ str.repeat(N)
 
 ///(num % 10 == 0 && num != 0) print last diit is 0;
 
+///  A=output is a;
+    // Check if uppercase and convert to lowercase
+    if (ch >= 'A' && ch <= 'Z') {
+        ch = ch + 32; // Convert to lowercase
+    }
+    // Check if lowercase and convert to uppercase
+    else if (ch >= 'a' && ch <= 'z') {
+        ch = ch - 32; // Convert to uppercase
+    }
+
