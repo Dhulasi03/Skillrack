@@ -3,6 +3,13 @@ System.out.print((ch >= 'A' && ch <= 'Z') ? (ch - 'A' + 1) : (ch - 'a' + 1));
 //a=26;A=26
 (ch >= 'A' && ch <= 'Z') ? ('Z' - ch + 1) : ('z' - ch + 1)
 
+
+////
+    // Convert lowercase to uppercase
+    if (a >= 'a' && a <= 'z') {
+        a = a - 32;  // Equivalent to: a = a - ('a' - 'A')
+    }
+
 ///last three string  ends with
   if (word.endsWith("ion"))
 
