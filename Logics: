@@ -9,7 +9,7 @@ System.out.print((ch >= 'A' && ch <= 'Z') ? (ch - 'A' + 1) : (ch - 'a' + 1));
     if (a >= 'a' && a <= 'z') {
         a = a - 32;  // Equivalent to: a = a - ('a' - 'A')
     }
-
+logics pow funs in c always treated as double
 ///last three string  ends with
   if (word.endsWith("ion"))
 
