@@ -31,7 +31,7 @@ ArrayList<String> → String	String.join(" ", list)
 
 //// repeat the string
 str.repeat(N)
-
+/// /// /// 
 ///(num % 10 == 0 && num != 0) print last diit is 0;
 
 ///  A=output is a;
