@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+
+    // Read input array
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // Find the maximum even number and print in descending order
+    while (1) {
+        int maxEven = -1;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] % 2 == 0 && arr[i] > maxEven) {
+                maxEven = arr[i];
+            }
+        }
+
+        if (maxEven == -1) break; // Stop when no more even numbers left
+
+        printf("%d ", maxEven);
+
+        // Mark the printed number as used
+        for (int i = 0; i < n; i++) {
+            if (arr[i] == maxEven) {
+                arr[i] = -1; // Replace it with -1 so it won't be selected again
+                break;
+            }
+        }
+    }
+
+    return 0;
+}
